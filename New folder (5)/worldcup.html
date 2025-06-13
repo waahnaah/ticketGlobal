@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>World Cup 2026 Tickets</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .match-item:hover {
+      background-color: #f7f7f7;
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer-links a:hover {
+      color: #e11d48;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-inter">
+  <div class="max-w-6xl mx-auto px-4 py-8">
+
+    <!-- Header -->
+    <header class="flex items-center justify-between mb-10">
+      <h1 class="text-3xl font-bold text-pink-600">vividseats</h1>
+      <nav class="space-x-6">
+        <a href="#" class="text-gray-700 hover:text-pink-600">Home</a>
+        <a href="#" class="text-gray-700 hover:text-pink-600">Concert</a>
+        <a href="#" class="text-gray-700 hover:text-pink-600">Sports</a>
+        <a href="#" class="text-gray-700 hover:text-pink-600">Contact</a>
+        <a href="#" class="text-gray-700 hover:text-pink-600">Login</a>
+      </nav>
+    </header>
+
+    <!-- Schedule Heading -->
+    <h2 class="text-2xl font-bold text-center text-pink-600 mb-8">FIFA World Cup Schedule</h2>
+
+    <!-- Matches -->
+    <div class="bg-white p-6 rounded-lg shadow mb-12 space-y-4">
+      <a href="match1.html" class="block match-item p-4 rounded-md transition-all flex justify-between items-center">
+        <div>
+          <div class="font-semibold text-gray-700">🇧🇷 Brazil vs 🇦🇷 Argentina</div>
+          <div class="text-sm text-gray-600 mt-2">June 20, 2026 - 8:00 PM</div>
+          <div class="text-sm text-gray-600 mt-1">SoFi Stadium, Inglewood, CA</div>
+        </div>
+        <button class="bg-pink-600 text-white py-2 px-4 rounded-full text-sm hover:bg-pink-700">Get Ticket</button>
+      </a>
+
+      <a href="match2.html" class="block match-item p-4 rounded-md transition-all flex justify-between items-center">
+        <div>
+          <div class="font-semibold text-gray-700">🇫🇷 France vs 🇩🇪 Germany</div>
+          <div class="text-sm text-gray-600 mt-2">June 21, 2026 - 6:00 PM</div>
+          <div class="text-sm text-gray-600 mt-1">MetLife Stadium, East Rutherford, NJ</div>
+        </div>
+        <button class="bg-pink-600 text-white py-2 px-4 rounded-full text-sm hover:bg-pink-700">Get Ticket</button>
+      </a>
+
+      <a href="match3.html" class="block match-item p-4 rounded-md transition-all flex justify-between items-center">
+        <div>
+          <div class="font-semibold text-gray-700">🇺🇸 USA vs 🇲🇽 Mexico</div>
+          <div class="text-sm text-gray-600 mt-2">June 22, 2026 - 9:00 PM</div>
+          <div class="text-sm text-gray-600 mt-1">Rose Bowl, Pasadena, CA</div>
+        </div>
+        <button class="bg-pink-600 text-white py-2 px-4 rounded-full text-sm hover:bg-pink-700">Get Ticket</button>
+      </a>
+    </div>
+
+    <!-- Club World Cup Tickets Section -->
+    <div class="bg-white p-8 rounded-lg shadow space-y-6 mb-12">
+      <h2 class="text-2xl font-bold text-pink-600">FIFA Club World Cup Tickets</h2>
+      <p>
+        The 2025 FIFA Club World Cup will debut an expanded format, featuring 32 clubs from around the world. 
+        Secure your tickets now to watch world-class clubs like Real Madrid, Manchester City, and Inter Miami live.
+      </p>
+
+      <h3 class="text-xl font-semibold">Frequently Asked Questions</h3>
+      <ul class="list-disc pl-5 space-y-2">
+        <li><strong>When?</strong> From June 15 to July 13, 2025</li>
+        <li><strong>Price?</strong> Tickets start around $24</li>
+        <li><strong>Format?</strong> 32-team group stage followed by knockout rounds</li>
+        <li><strong>Qualified Teams?</strong> Real Madrid, Man City, Bayern Munich, Al Ahly, and more</li>
+        <li><strong>Venues?</strong> Played in cities like Miami, LA, Seattle, and NYC</li>
+        <li><strong>On Sale?</strong> Available now via Vivid Seats</li>
+      </ul>
+
+      <h3 class="text-xl font-semibold mt-8">Club World Cup Schedule and Ticket Prices</h3>
+      <div class="overflow-x-auto">
+        <table class="table-auto w-full text-sm border" id="ticket-table">
+          <thead>
+            <tr class="bg-gray-100 text-left">
+              <th class="p-2 border">Date</th>
+              <th class="p-2 border">City</th>
+              <th class="p-2 border">Venue</th>
+              <th class="p-2 border">Lowest Price</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-8">
+          <div>
+            <h4 class="font-semibold mb-2">About Us</h4>
+            <ul class="space-y-2 footer-links">
+              <li><a href="#" class="text-sm hover:text-pink-600">Our Story</a></li>
+              <li><a href="#" class="text-sm hover:text-pink-600">Team</a></li>
+              <li><a href="#" class="text-sm hover:text-pink-600">Careers</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-2">Our Company</h4>
+            <ul class="space-y-2 footer-links">
+              <li><a href="#" class="text-sm hover:text-pink-600">About Us</a></li>
+              <li><a href="#" class="text-sm hover:text-pink-600">Privacy Policy</a></li>
+              <li><a href="#" class="text-sm hover:text-pink-600">Terms of Service</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-2">Our Services</h4>
+            <ul class="space-y-2 footer-links">
+              <li><a href="#" class="text-sm hover:text-pink-600">Ticket Booking</a></li>
+              <li><a href="#" class="text-sm hover:text-pink-600">Event Schedules</a></li>
+              <li><a href="#" class="text-sm hover:text-pink-600">Venue Info</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="text-center text-sm mt-6">
+        <p>&copy; 2026 World Cup Tickets. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Ticket Data Script -->
+  <script>
+    const ticketData = [
+      ["06/14/2025", "Miami Gardens, FL", "Hard Rock Stadium", "$235"],
+      ["06/15/2025", "Pasadena, CA", "Rose Bowl Stadium", "$80"],
+      ["06/15/2025", "Cincinnati, OH", "TQL Stadium", "$94"],
+      ["06/15/2025", "East Rutherford, NJ", "MetLife Stadium", "$77"],
+      ["06/16/2025", "Atlanta, GA", "Mercedes-Benz Stadium", "$60"],
+      ["06/18/2025", "Philadelphia, PA", "Lincoln Financial Field", "$74"],
+      ["06/19/2025", "Seattle, WA", "Lumen Field", "$108"],
+      ["06/20/2025", "Orlando, FL", "Inter&Co Stadium", "$56"],
+      ["06/21/2025", "Charlotte, NC", "Bank of America Stadium", "$95"],
+      ["07/13/2025", "East Rutherford, NJ", "MetLife Stadium", "$511"]
+    ];
+
+    const tableBody = document.querySelector("#ticket-table tbody");
+
+    ticketData.forEach(row => {
+      const tr = document.createElement("tr");
+      row.forEach(cell => {
+        const td = document.createElement("td");
+        td.className = "p-2 border";
+        td.textContent = cell;
+        tr.appendChild(td);
+      });
+      tableBody.appendChild(tr);
+    });
+  </script>
+</body>
+</html>
+
+
